@@ -43,7 +43,10 @@ module.exports = {
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    CAPTION_KEY: process.env.CP === undefined ?'```Project-69```' : process.env.CP,
+    CAPTION_KEY: process.env.CP === undefined ?'🎭 ```Project-69``` 🎭' : process.env.CP,
+    MENUTEXT: process.env.MENU === undefined ?'🎭 ```Project-69``` 🎭' : process.env.MENU,
+    ALIVEIMG: process.env.ALIVE_IMG === undefined ? 'https://ibb.co/m8tphkd.jpg' : process.env.ALIVE_IMG,
+    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? '🎭 ```Project-69``` 🎭' : process.env.ALIVE_MESSAGE,    
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
