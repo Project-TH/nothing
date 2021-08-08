@@ -46,7 +46,7 @@ module.exports = {
     CAPTION_KEY: process.env.CP === undefined ?'🎭 Project-69 🎭' : process.env.CP,
     MENUTEXT: process.env.MENU === undefined ?'🎭 Project-69 🎭' : process.env.MENU,
     ALIVEIMG: process.env.ALIVE_IMG === undefined ? 'https://ibb.co/m8tphkd.jpg' : process.env.ALIVE_IMG,
-    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,    
+    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? '🎭 Project-69 🎭' : process.env.ALIVE_MESSAGE,    
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
