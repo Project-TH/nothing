@@ -1,49 +1,32 @@
-const Amdi = require('../events');
+const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const {spawnSync} = require('child_process');
-const Config = require('../config');
-const chalk = require('chalk');
+const fs = require('fs');
 const axios = require('axios');
+const request = require('request');
+const got = require("got");
+const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('system_stats');
-
+const Lang = Language.getString('webss');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: true,  deleteCommand: false,  desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive ?(.*)', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
-        if (Config.ALIVEMSG == 'default') {
-            
-            var image = await axios.get (Config.ALIVEIMG, {responseType: 'arraybuffer'})
-       
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "🎭 Project-69 🎭"})
+        var webimage = await axios.get(Config.ALIVEIMG, { responseType: 'arraybuffer' })
 
-    }
-    else {
-            
-            var image = await axios.get (Config.ALIVEIMG, {responseType: 'arraybuffer'})
-       
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG})
-     }
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVEMSG})
+
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive ?(.*)', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
-        if (Config.ALIVEMSG == 'default') {
-            
-            var image = await axios.get (Config.ALIVEIMG, {responseType: 'arraybuffer'})
-       
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "🎭 Project-69 🎭"})
+        var webimage = await axios.get(Config.ALIVEIMG, { responseType: 'arraybuffer' })
 
-    }
-    else {
-            
-            var image = await axios.get (Config.ALIVEIMG, {responseType: 'arraybuffer'})
-       
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Copyright © 2021 | Queen Amdi*' })
-     }
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.ALIVEMSG})
+
     }));
 }
+
