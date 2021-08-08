@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ThevinduHansara/69)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ThevinduHansara/Project-69)
      </div>
 
 ----
