@@ -82,7 +82,7 @@
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
             "required": false
-        },
+        }
     },
     "addons": [{
       "plan": "heroku-postgresql"
