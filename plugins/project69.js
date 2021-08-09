@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'private') {
 
 ```!video        : DOWNLOADS VIDEO FROM YOUTUBE.```\n\n
 
-```!invite       : PROVIDES THE GROUP'S INVITATION LINK.```\n\n
+```!invite       : PROVIDES THE GROUP`S INVITATION LINK.```\n\n
 
 ```!removebg     : REMOVES THE BACKGROUND OF THE PHOTOS.```\n\n
 
@@ -72,9 +72,9 @@ if (Config.WORKTYPE == 'private') {
 
 ```.animesay     : IT WRITES THE TEXT INSIDE THE BANNER THE ANIME GIRL IS HOLDING```\n\n
 
-```.changesay    : ```TURNS THE TEXT INTO THE CHANGE MY MIND POSTER.```\n\n
+```.changesay    : TURNS THE TEXT INTO THE CHANGE MY MIND POSTER.```\n\n
 
-```.trumpsay     : CONVERTS THE TEXT TO TRUMP'S TWEET.```\n\n
+```.trumpsay     : CONVERTS THE TEXT TO TRUMP`S TWEET.```\n\n
 
 ```.sticker      : IT CONVERTS YOUR REPLIED PHOTO OR VIDEO TO STICKER.```\n\n
 
@@ -118,7 +118,7 @@ else if (Config.WORKTYPE == 'public') {
 
 ```!video        : DOWNLOADS VIDEO FROM YOUTUBE.```\n\n
 
-```!invite       : PROVIDES THE GROUP'S INVITATION LINK.```\n\n
+```!invite       : PROVIDES THE GROUP`S INVITATION LINK.```\n\n
 
 ```!removebg     : REMOVES THE BACKGROUND OF THE PHOTOS.```\n\n
 
@@ -160,9 +160,9 @@ else if (Config.WORKTYPE == 'public') {
 
 ```.animesay     : IT WRITES THE TEXT INSIDE THE BANNER THE ANIME GIRL IS HOLDING```\n\n
 
-```.changesay    : ```TURNS THE TEXT INTO THE CHANGE MY MIND POSTER.```\n\n
+```.changesay    : TURNS THE TEXT INTO THE CHANGE MY MIND POSTER.```\n\n
 
-```.trumpsay     : CONVERTS THE TEXT TO TRUMP'S TWEET.```\n\n
+```.trumpsay     : CONVERTS THE TEXT TO TRUMP`S TWEET.```\n\n
 
 ```.sticker      : IT CONVERTS YOUR REPLIED PHOTO OR VIDEO TO STICKER.```\n\n
 
