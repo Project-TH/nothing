@@ -1,3 +1,5 @@
+//G-CMDS by Thevindu Hansara
+
 const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -7,8 +9,8 @@ const cwebp = require('cwebp-bin');
 const Config = require('../config');
 
 const Language = require('../language');
-const dd = "Tempory විධාන ලැයිස්තුව"
-const ddd = "විධාන ලැයිස්තුව"
+const dd = "General Command List"
+const ddd = "G-CMDS"
 
 
 if (Config.WORKTYPE == 'private') {
