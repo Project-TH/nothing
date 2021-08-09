@@ -29,7 +29,7 @@ Asena.addCommand({pattern: 'barcode ?(.*)', fromMe: false, dontAddCommandList: t
 
     }));
 
-//One Text Logos By Thevindu Hansara
+//One Text Logos By Thevindu Hansara (TEXTPRO)
 
 Asena.addCommand({pattern: 'inaruto ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
@@ -301,7 +301,7 @@ Asena.addCommand({pattern: 'ibook ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-//Two Text Logos By Thevindu Hansara
+//Two Text Logos By Thevindu Hansara (TEXTPRO)
 
 Asena.addCommand({pattern: 'iwolf ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
