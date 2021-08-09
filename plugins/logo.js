@@ -7,6 +7,8 @@ const need = "```YOU MUST ENTER WORDS!```"
 
 if (Config.WORKTYPE == 'public') {
 
+//One Text Logos By Thevindu Hansara
+
 Asena.addCommand({pattern: 'inaruto ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
@@ -274,6 +276,142 @@ Asena.addCommand({pattern: 'ibook ?(.*)', fromMe: false, dontAddCommandList: tru
     var ttinullimage = await axios.get(`https://api.zeks.xyz/api/nulis?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'iwolf ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/wolflogo?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'ipubg ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/pubglogo?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'isnowwrite ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/snowwrite?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'iwatercolour ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/watercolour?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'iavengers ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/logoaveng?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'iph ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'imarvel ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/marvellogo?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'iglitch ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+  
+  var topText, bottomText;
+    if (match[1].includes('/')) {
+        var split = match[1].split('/');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gtext?apikey=eDDV8wqAaTTmekir6SE5og9FB6O&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
     }));
 
