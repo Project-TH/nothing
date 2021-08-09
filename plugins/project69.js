@@ -3,7 +3,8 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 Asena.addCommand({pattern: 'help', fromMe: false}, (async (message, match) => {
 
-    await message.sendMessage("```GENERAL COMMANDS``` ;\n\n  \n
+    await message.client.sendMessage(
+                message.jid,'\n*~♈ _____~* '+Config.MENUTEXT+' *~_____ ♈~*\n\n```GENERAL COMMANDS``` ;\n\n  \n
 
 ```!alive        : DOES BOT WORK?```\n\n
 
@@ -79,5 +80,8 @@ Asena.addCommand({pattern: 'help', fromMe: false}, (async (message, match) => {
 
 ```.calc         : PERFORMS SIMPLE MATH OPERATIONS.```\n\n
 
-```.whois        : DISPLAYS METADATA DATA OF GROUP OR PERSON.```\n\n");
+```.whois        : DISPLAYS METADATA DATA OF GROUP OR PERSON.```\n\n'
+            );
+
+
 }));
