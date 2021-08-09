@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'cup ?(.*)', fromMe: wk, dontAddCommandList: true}, (
                   });
               };
 
-              await download(`${data}`, '/root/Project-69/cup.jpg', async() => {                          
+              await download(`${data}`, '/root/WhatsAsenaDuplicated/cup.jpg', async() => {                          
                   await message.client.sendMessage(message.jid,fs.readFileSync('/root/Project-69/cup.jpg'), MessageType.image, { caption: Config.CAPTION_KEY})
               })
           } catch(err) { 
