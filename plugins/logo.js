@@ -279,6 +279,8 @@ Asena.addCommand({pattern: 'ibook ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
+//Two Text Logos By Thevindu Hansara
+
 Asena.addCommand({pattern: 'iwolf ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
