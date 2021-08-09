@@ -1,7 +1,7 @@
 FROM fusuf/whatsasena:latest
 
 RUN git clone https://github.com/ThevinduHansara/Project-69 /root/WhatsAsenaDuplicated
-WORKDIR /root/WhatsAsenaDuplicated/
+WORKDIR /root/Project-69/
 ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
 RUN yarn install --no-audit
