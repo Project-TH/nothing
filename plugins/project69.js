@@ -3,9 +3,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 Asena.addCommand({pattern: 'help', fromMe: false}, (async (message, match) => {
 
-    await message.sendMessage("\n*~♈ _____~ '+Config.MENUTEXT+' ~_____ ♈~*\n\n
-
-```GENERAL COMMANDS``` ;\n\n  
+    await message.sendMessage("```GENERAL COMMANDS``` ;\n\n  \n
 
 ```!alive        : DOES BOT WORK?```\n\n
 
