@@ -7,7 +7,7 @@ const need = "```YOU MUST ENTER WORDS!```"
 
 if (Config.WORKTYPE == 'public') {
 
-Asena.addCommand({pattern: 'naruto ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'inaruto ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -17,7 +17,7 @@ Asena.addCommand({pattern: 'naruto ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({pattern: 'bneon ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ibneon ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -27,7 +27,7 @@ Asena.addCommand({pattern: 'bneon ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'matrix ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'imatrix ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -37,7 +37,7 @@ Asena.addCommand({pattern: 'matrix ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({pattern: 'breakwall ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ibreakwall ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -47,7 +47,7 @@ Asena.addCommand({pattern: 'breakwall ?(.*)', fromMe: false, dontAddCommandList:
 
     }));
 
-Asena.addCommand({pattern: 'gneon ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'igneon ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -57,7 +57,7 @@ Asena.addCommand({pattern: 'gneon ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'dropwater ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'idropwater ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -67,7 +67,7 @@ Asena.addCommand({pattern: 'dropwater ?(.*)', fromMe: false, dontAddCommandList:
 
     }));
 
-Asena.addCommand({pattern: 'crossfire ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'icrossfire ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -77,7 +77,7 @@ Asena.addCommand({pattern: 'crossfire ?(.*)', fromMe: false, dontAddCommandList:
 
     }));
 
-Asena.addCommand({pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'isilk ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -87,7 +87,7 @@ Asena.addCommand({pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({pattern: 'flame ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'iflame ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -97,7 +97,7 @@ Asena.addCommand({pattern: 'flame ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'glow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'iglow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -107,7 +107,7 @@ Asena.addCommand({pattern: 'glow ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({pattern: 'smoke ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ismoke ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -117,7 +117,7 @@ Asena.addCommand({pattern: 'smoke ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'sky ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'isky ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -127,7 +127,7 @@ Asena.addCommand({pattern: 'sky ?(.*)', fromMe: false, dontAddCommandList: true}
 
     }));
 
-Asena.addCommand({pattern: 'cs ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ics ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -137,7 +137,7 @@ Asena.addCommand({pattern: 'cs ?(.*)', fromMe: false, dontAddCommandList: true},
 
     }));
 
-Asena.addCommand({pattern: 'lightwriting ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ilightwriting ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -147,7 +147,7 @@ Asena.addCommand({pattern: 'lightwriting ?(.*)', fromMe: false, dontAddCommandLi
 
     }));
 
-Asena.addCommand({pattern: 'crismes ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'icrismes ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -157,7 +157,7 @@ Asena.addCommand({pattern: 'crismes ?(.*)', fromMe: false, dontAddCommandList: t
 
     }));
 
-Asena.addCommand({pattern: 'firework ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ifirework ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -167,7 +167,7 @@ Asena.addCommand({pattern: 'firework ?(.*)', fromMe: false, dontAddCommandList: 
 
     }));
 
-Asena.addCommand({pattern: 'sandw ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'isandw ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -177,7 +177,7 @@ Asena.addCommand({pattern: 'sandw ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'freefire ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ifreefire ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -187,7 +187,7 @@ Asena.addCommand({pattern: 'freefire ?(.*)', fromMe: false, dontAddCommandList: 
 
     }));
 
-Asena.addCommand({pattern: 'gplay ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'igplay ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -197,7 +197,7 @@ Asena.addCommand({pattern: 'gplay ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'splay ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'isplay ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -207,7 +207,7 @@ Asena.addCommand({pattern: 'splay ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'box3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ibox3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -217,7 +217,7 @@ Asena.addCommand({pattern: 'box3d ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: '3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'i3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -227,7 +227,7 @@ Asena.addCommand({pattern: '3d ?(.*)', fromMe: false, dontAddCommandList: true},
 
     }));
 
-Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'iblackpink ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -237,7 +237,7 @@ Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: false, dontAddCommandList:
 
     }));
 
-Asena.addCommand({pattern: 'thunder ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ithunder ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -247,7 +247,7 @@ Asena.addCommand({pattern: 'thunder ?(.*)', fromMe: false, dontAddCommandList: t
 
     }));
 
-Asena.addCommand({pattern: 'leave ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ileave ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -257,7 +257,7 @@ Asena.addCommand({pattern: 'leave ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({pattern: 'tlight ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'itlight ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -267,7 +267,7 @@ Asena.addCommand({pattern: 'tlight ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-Asena.addCommand({pattern: 'book ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ibook ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
