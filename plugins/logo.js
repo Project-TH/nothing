@@ -311,6 +311,100 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
+//QAMDI
+
+Asena.addCommand({pattern: 'wetglass ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'multicolour3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/multicolor3d?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'luxurygold ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/luxurygold?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'bflower ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/beautifulflower?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'metal ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'royal ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/royaltext?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'avatarlol ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'fps ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+
+
 //Two Text Logos By Thevindu Hansara (TEXTPRO)
 
 Asena.addCommand({pattern: 'wolf ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
