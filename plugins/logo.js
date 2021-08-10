@@ -308,8 +308,8 @@ Asena.addCommand({pattern: 'iwolf ?(.*)', fromMe: false, dontAddCommandList: tru
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -325,8 +325,8 @@ Asena.addCommand({pattern: 'ipubg ?(.*)', fromMe: false, dontAddCommandList: tru
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -342,8 +342,8 @@ Asena.addCommand({pattern: 'isnowwrite ?(.*)', fromMe: false, dontAddCommandList
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -359,8 +359,8 @@ Asena.addCommand({pattern: 'iwatercolour ?(.*)', fromMe: false, dontAddCommandLi
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -376,8 +376,8 @@ Asena.addCommand({pattern: 'iavengers ?(.*)', fromMe: false, dontAddCommandList:
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -393,8 +393,8 @@ Asena.addCommand({pattern: 'iph ?(.*)', fromMe: false, dontAddCommandList: true}
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -410,8 +410,8 @@ Asena.addCommand({pattern: 'imarvel ?(.*)', fromMe: false, dontAddCommandList: t
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
@@ -427,8 +427,8 @@ Asena.addCommand({pattern: 'iglitch ?(.*)', fromMe: false, dontAddCommandList: t
     if (match[1] === '') return await message.sendMessage(need);
   
   var topText, bottomText;
-    if (match[1].includes('/')) {
-        var split = match[1].split('/');
+    if (match[1].includes(',')) {
+        var split = match[1].split(',');
         bottomText = split[1];
         topText = split[0];
 }
