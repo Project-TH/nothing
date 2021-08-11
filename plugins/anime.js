@@ -1,6 +1,8 @@
 const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
+const ANIME = "\n```🍭 ANIME LIST 🍭```\n\n\n┎🫐 ```.loli```\n┃\n┝🫐 ```.wifu```\n┃\n┝🫐 ```.awoo```\n┃\n┝🫐 ```.shinobu```\n┃\n┗🫐 ```.megumin```\n\n"
 const fs = require('fs');
+const Ln = "Anime List"
 const axios = require('axios');
 const Config = require('../config');
 
@@ -49,6 +51,10 @@ if (Config.WORKTYPE == 'private') {
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
     
+    }));
+
+    Asena.addCommand({ pattern: 'anime ?(.*)', fromMe: true, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
+
     }));
 
 }
@@ -101,6 +107,11 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
     
     }));
+
+    Asena.addCommand({ pattern: 'anime ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
+
+    }));
+
 
 
 
