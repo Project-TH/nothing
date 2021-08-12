@@ -515,7 +515,7 @@ if (config.WORKTYPE == 'private') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://bx-hunter.herokuapp.com/api/fbdownload?url=${username}&apikey=Ikyy69`)
+          .get(`https://api.xteam.xyz/dl/fb?APIKEY=a98c10ea68ebabd1&url=${userName}`)
           .then(async (response) => {
             const {
               result,
@@ -1013,7 +1013,7 @@ else if (config.WORKTYPE == 'public') {
         if (!userName) return await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text, {quoted: message.data});
 
         await axios
-          .get(`https://bx-hunter.herokuapp.com/api/fbdownload?url=${username}&apikey=Ikyy69`)
+          .get(`https://api.xteam.xyz/dl/fb?APIKEY=a98c10ea68ebabd1&url=${userName}`)
           .then(async (response) => {
             const {
               result,
