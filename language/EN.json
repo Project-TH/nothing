@@ -196,11 +196,6 @@
             "GETTING_VIDEOS": "```I'M BRINGING VIDEOS...```",
             "NOT_FOUND": "```I COULD NOT FIND ANYTHING!```",
             "SEARCHING": "```🔎 SEARCHING...```",
-            "FBDESC": "Download Facebook videos.",
-            "NOT_FOUNDFB": "```I COULD NOT FIND ANYTHING!```",
-            "DL_VID": "```DOWNLOADING VIDEO...```",
-            "UP_VID": "```UPLOADING SONG...```",
-            "ERR_VID": "```PLEASE ENTER A VALID LINK!```",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
             "IMG": "```UPLOADING PHOTO {} NUMBER {} ...```"
