@@ -53,7 +53,7 @@ if (Config.WORKTYPE == 'private') {
     
     }));
 
-    Asena.addCommand({ pattern: 'anime ?(.*)', fromMe: true, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
+    Asena.addCommand({ pattern: 'animelist ?(.*)', fromMe: true, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
 
     }));
 
@@ -108,7 +108,7 @@ else if (Config.WORKTYPE == 'public') {
     
     }));
 
-    Asena.addCommand({ pattern: 'anime ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
+    Asena.addCommand({ pattern: 'animelist ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
 
     }));
 
