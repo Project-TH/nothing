@@ -72,19 +72,3 @@ else if (Config.AI_BOT == 'false') {
 		});
 	}
 }
-
-Asena.addCommand({pattern: 'adon ?(.*)', fromMe: true, desc: Lang.ADON_DESC}, (async(message, match) => {
-
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.ADON_MISSING, MessageType.text);
-    if ((varKey = match[1].split(':')[0]) && (varValue = match[1].split(':')[1])) {
-        await heroku.patch(baseURI + '/config-vars', {
-            body: {
-                [varKey]: varValue
-            }
-        }).then(async (app) => {
-            await message.client.sendMessage(message.jid,Lang.ADON_SUCCESS.format(varKey, varValue), MessageType.text);
-        });
-    } else {
-        await message.client.sendMessage(message.jid,Lang.ADON_INVALID, MessageType.text);
-    }
-}));
