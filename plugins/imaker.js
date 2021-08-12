@@ -2,7 +2,7 @@ const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
-const IMAKER = "\n*~* ```IMAGE 🌈 MAKER``` *~*\n\n\n┎🍇 ```.barcode```\n┃\n┝🍇 ```.qr```\n┃\n┝🍇 ```.naruto```\n┃\n┝🍇 ```.bneon```\n┃\n┝🍇 ```.matrix```\n┃\n┝🍇 ```.breakwall```\n┃\n┝🍇 ```.gneon```\n┃\n┝🍇 ```.dropwater```\n┃\n┝🍇 ```.crossfire```\n┃\n┝🍇 ```.silk```\n┃\n┝🍇 ```.flame```\n┃\n┝🍇 ```.glow```\n┃\n┝🍇 ```.smoke```\n┃\n┝🍇 ```.sky```\n┃\n┝🍇 ```.cs```\n┃\n┝🍇 ```.lightwriting```\n┃\n┝🍇 ```.crismes```\n┃\n┝🍇 ```.firework```\n┃\n┝🍇 ```.sandw```\n┃\n┝🍇 ```.freefire```\n┃\n┝🍇 ```.gplay```\n┃\n┝🍇 ```.splay```\n┃\n┝🍇 ```.box3d```\n┃\n┝🍇 ```.3d```\n┃\n┝🍇 ```.blackpink```\n┃\n┝🍇 ```.thunder```\n┃\n┝🍇 ```.leave```\n┃\n┝🍇 ```.tlight```\n┃\n┝🍇 ```.book```\n┃\n┝🍇 ```.gaming```\n┃\n┝🍇 ```.wolf```\n┃\n┝🍇 ```.pubg```\n┃\n┝🍇 ```.snowwrite```\n┃\n┝🍇 ```.watercolour```\n┃\n┝🍇 ```.avengers```\n┃\n┝🍇 ```.ph```\n┃\n┝🍇 ```.marvel```\n┃\n┗🍇 ```.glitch```\n\n"
+const IMAKER = "\n*~* ```IMAGE 🌈 MAKER``` *~*\n\n\n┎🍇 ```.barcode```\n┃\n┝🍇 ```.qr```\n┃\n┝🍇 ```.naruto```\n┃\n┝🍇 ```.bneon```\n┃\n┝🍇 ```.matrix```\n┃\n┝🍇 ```.breakwall```\n┃\n┝🍇 ```.gneon```\n┃\n┝🍇 ```.dropwater```\n┃\n┝🍇 ```.crossfire```\n┃\n┝🍇 ```.silk```\n┃\n┝🍇 ```.flame```\n┃\n┝🍇 ```.glow```\n┃\n┝🍇 ```.smoke```\n┃\n┝🍇 ```.sky```\n┃\n┝🍇 ```.cs```\n┃\n┝🍇 ```.lightwriting```\n┃\n┝🍇 ```.crismes```\n┃\n┝🍇 ```.firework```\n┃\n┝🍇 ```.sandw```\n┃\n┝🍇 ```.freefire```\n┃\n┝🍇 ```.gplay```\n┃\n┝🍇 ```.splay```\n┃\n┝🍇 ```.box3d```\n┃\n┝🍇 ```.3d```\n┃\n┝🍇 ```.blackpink```\n┃\n┝🍇 ```.thunder```\n┃\n┝🍇 ```.leave```\n┃\n┝🍇 ```.tlight```\n┃\n┝🍇 ```.book```\n┃\n┝🍇 ```.gaming```\n┃\n┝🍇 ```.wolf```\n┃\n┝🍇 ```.pubg```\n┃\n┝🍇 ```.snow```\n┃\n┝🍇 ```.wc```\n┃\n┝🍇 ```.avengers```\n┃\n┝🍇 ```.ph```\n┃\n┝🍇 ```.marvel```\n┃\n┗🍇 ```.glitch```\n\n"
 const Config = require('../config');
 const Ln = "Image Maker"
 const need = "```YOU MUST ENTER WORDS!```"
@@ -349,7 +349,7 @@ Asena.addCommand({pattern: 'pubg ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({pattern: 'snowwrite ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'snow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
   
@@ -366,7 +366,7 @@ Asena.addCommand({pattern: 'snowwrite ?(.*)', fromMe: false, dontAddCommandList:
 
     }));
 
-Asena.addCommand({pattern: 'watercolour ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'wc ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
   
@@ -799,7 +799,7 @@ Asena.addCommand({pattern: 'pubg ?(.*)', fromMe: true, dontAddCommandList: true}
 
     }));
 
-Asena.addCommand({pattern: 'snowwrite ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'snow ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
   
@@ -816,7 +816,7 @@ Asena.addCommand({pattern: 'snowwrite ?(.*)', fromMe: true, dontAddCommandList: 
 
     }));
 
-Asena.addCommand({pattern: 'watercolour ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'wc ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
   
