@@ -313,6 +313,16 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
+Asena.addCommand({pattern: 'romantic ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://bx-${Config.ON}.herokuapp.com/api/photooxy/romantic?text=${encodeURIComponent(match[1])}&apikey=${Config.CCN}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
 //Two Text Logos By Thevindu Hansara (TEXTPRO)
 
 Asena.addCommand({pattern: 'wolf ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
@@ -758,6 +768,16 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: true, dontAddCommandList: tru
     if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+    }));
+
+Asena.addCommand({pattern: 'romantic ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(need);
+
+    var ttinullimage = await axios.get(`https://bx-${Config.ON}.herokuapp.com/api/photooxy/romantic?text=${encodeURIComponent(match[1])}&apikey=${Config.CCN}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
