@@ -508,6 +508,37 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
+    Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.FBDESC}, (async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text, {quoted: message.data});
+
+        await axios
+          .get(`https://bx-hunter.herokuapp.com/api/fbdownload?url=${username}&apikey=Ikyy69`)
+          .then(async (response) => {
+            const {
+              result,
+              status,
+            } = response.data
+
+            const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NOT_FOUNDFB,MessageType.text, {quoted: message.data})}
+          
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: Config.CAPTION_KEY}) 
+        }
+          })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
+    }));
+
     Asena.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
@@ -973,6 +1004,37 @@ else if (config.WORKTYPE == 'public') {
             reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
             await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
         });
+    }));
+
+    Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false,  deleteCommand: false, desc: Lang.FBDESC}, (async (message, match) => {
+
+        const userName = match[1]
+
+        if (!userName) return await message.client.sendMessage(message.jid,Lang.ERR_VID,MessageType.text, {quoted: message.data});
+
+        await axios
+          .get(`https://bx-hunter.herokuapp.com/api/fbdownload?url=${username}&apikey=Ikyy69`)
+          .then(async (response) => {
+            const {
+              result,
+              status,
+            } = response.data
+
+            const profileBuffer = await axios.get(result, {responseType: 'arraybuffer'})
+
+            const msg = `${status}`
+
+      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NOT_FOUNDFB,MessageType.text, {quoted: message.data})}
+          
+      if (msg === '200') {
+        await message.client.sendMessage(message.jid,Lang.DL_VID,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid,Lang.UP_VID,MessageType.text, {quoted: message.data});
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {caption: Config.CAPTION_KEY}) 
+        }
+          })
+          .catch(
+            async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
+          )
     }));
 
     Asena.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
