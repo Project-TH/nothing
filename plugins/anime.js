@@ -1,6 +1,6 @@
 const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
-const ANIME = "\n*~* ```ANIME 🍭 LIST``` *~*\n\n\n┎🫐 ```.loli```\n┃\n┝🫐 ```.wifu```\n┃\n┝🫐 ```.awoo```\n┃\n┝🫐 ```.shinobu```\n┃\n┗🫐 ```.megumin```\n\n"
+const ANIME = "\n*~* ```ANIME 🍭 LIST``` *~*\n\n\n┎🫐 ```.loli```\n┃\n┝🫐 ```.wifu```\n┃\n┝🫐 ```.neko```\n┃\n┝🫐 ```.awoo```\n┃\n┝🫐 ```.shinobu```\n┃\n┗🫐 ```.megumin```\n\n"
 const fs = require('fs');
 const Ln = "Anime List"
 const axios = require('axios');
@@ -57,6 +57,14 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
+    Asena.addCommand({ pattern: 'neko ?(.*)', fromMe: true,dontaddCommandList: true }, (async (message, match) => {
+
+       var ttinullimage = await axios.get(`https://bx-${Config.ON}.herokuapp.com/api/sfw/neko?apikey=${Config.CCN}`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+    
+    }));
+
 }
 
 else if (Config.WORKTYPE == 'public') {
@@ -110,6 +118,14 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({ pattern: 'animelist ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
 
+    }));
+
+    Asena.addCommand({ pattern: 'neko ?(.*)', fromMe: false,dontaddCommandList: true }, (async (message, match) => {
+
+       var ttinullimage = await axios.get(`https://bx-${Config.ON}.herokuapp.com/api/sfw/neko?apikey=${Config.CCN}`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+    
     }));
 
 
