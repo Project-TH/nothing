@@ -313,13 +313,13 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: false, dontAddCommandList: tr
 
     }));
 
-//QAMDI
+//QA
 
 Asena.addCommand({pattern: 'wetglass ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/wetglass?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -329,7 +329,7 @@ Asena.addCommand({pattern: 'multicolour3d ?(.*)', fromMe: false, dontAddCommandL
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/multicolor3d?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/multicolor3d?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -339,7 +339,7 @@ Asena.addCommand({pattern: 'luxurygold ?(.*)', fromMe: false, dontAddCommandList
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/luxurygold?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/luxurygold?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -349,7 +349,7 @@ Asena.addCommand({pattern: 'bflower ?(.*)', fromMe: false, dontAddCommandList: t
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/beautifulflower?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/beautifulflower?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -359,7 +359,7 @@ Asena.addCommand({pattern: 'metal ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/metallogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -369,7 +369,7 @@ Asena.addCommand({pattern: 'royal ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/royaltext?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/royaltext?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -379,7 +379,7 @@ Asena.addCommand({pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/anonymhacker?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -389,7 +389,7 @@ Asena.addCommand({pattern: 'avatarlol ?(.*)', fromMe: false, dontAddCommandList:
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/avatarlolnew?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -399,7 +399,7 @@ Asena.addCommand({pattern: 'fps ?(.*)', fromMe: false, dontAddCommandList: true}
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/fpslogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -857,13 +857,13 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: true, dontAddCommandList: tru
 
     }));
 
-//QAMDI
+//QA
 
 Asena.addCommand({pattern: 'wetglass ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/wetglass?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/wetglass?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -873,7 +873,7 @@ Asena.addCommand({pattern: 'multicolour3d ?(.*)', fromMe: true, dontAddCommandLi
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/multicolor3d?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/multicolor3d?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -883,7 +883,7 @@ Asena.addCommand({pattern: 'luxurygold ?(.*)', fromMe: true, dontAddCommandList:
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/luxurygold?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/luxurygold?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -893,7 +893,7 @@ Asena.addCommand({pattern: 'bflower ?(.*)', fromMe: true, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/beautifulflower?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/beautifulflower?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -903,7 +903,7 @@ Asena.addCommand({pattern: 'metal ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/metallogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/metallogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -913,7 +913,7 @@ Asena.addCommand({pattern: 'royal ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/royaltext?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/royaltext?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -923,7 +923,7 @@ Asena.addCommand({pattern: 'anony ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/anonymhacker?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -933,7 +933,7 @@ Asena.addCommand({pattern: 'avatarlol ?(.*)', fromMe: true, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/avatarlolnew?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/avatarlolnew?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -943,7 +943,7 @@ Asena.addCommand({pattern: 'fps ?(.*)', fromMe: true, dontAddCommandList: true},
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/fpslogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/fpslogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
