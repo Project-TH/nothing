@@ -15,7 +15,7 @@ Asena.addCommand({pattern: 'qr ?(.*)', fromMe: false, dontAddCommandList: true},
 J
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/qrencode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/qrencode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'barcode ?(.*)', fromMe: false, dontAddCommandList: t
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/barcode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/barcode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -37,7 +37,7 @@ Asena.addCommand({pattern: 'naruto ?(.*)', fromMe: false, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/naruto?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/naruto?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -47,7 +47,7 @@ Asena.addCommand({pattern: 'bneon ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/bneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/bneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -57,7 +57,7 @@ Asena.addCommand({pattern: 'matrix ?(.*)', fromMe: false, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/matrix?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/matrix?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -67,7 +67,7 @@ Asena.addCommand({pattern: 'breakwall ?(.*)', fromMe: false, dontAddCommandList:
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/breakwall?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/breakwall?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -77,7 +77,7 @@ Asena.addCommand({pattern: 'gneon ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/gneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -87,7 +87,7 @@ Asena.addCommand({pattern: 'dropwater ?(.*)', fromMe: false, dontAddCommandList:
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/dropwater?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/dropwater?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -97,7 +97,7 @@ Asena.addCommand({pattern: 'crossfire ?(.*)', fromMe: false, dontAddCommandList:
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/crosslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/crosslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -107,7 +107,7 @@ Asena.addCommand({pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/silktext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/silktext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -117,7 +117,7 @@ Asena.addCommand({pattern: 'flame ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/flametext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/flametext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -127,7 +127,7 @@ Asena.addCommand({pattern: 'glow ?(.*)', fromMe: false, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/glowtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/glowtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -137,7 +137,7 @@ Asena.addCommand({pattern: 'smoke ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/smoketext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/smoketext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -147,7 +147,7 @@ Asena.addCommand({pattern: 'sky ?(.*)', fromMe: false, dontAddCommandList: true}
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/skytext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/skytext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -157,7 +157,7 @@ Asena.addCommand({pattern: 'cs ?(.*)', fromMe: false, dontAddCommandList: true},
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/cslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/cslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -167,7 +167,7 @@ Asena.addCommand({pattern: 'lightwriting ?(.*)', fromMe: false, dontAddCommandLi
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/lithgtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/lithgtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -177,7 +177,7 @@ Asena.addCommand({pattern: 'crismes ?(.*)', fromMe: false, dontAddCommandList: t
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/crismes?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/crismes?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -187,7 +187,7 @@ Asena.addCommand({pattern: 'firework ?(.*)', fromMe: false, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/tfire?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -197,7 +197,7 @@ Asena.addCommand({pattern: 'sandw ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/sandw?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/sandw?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -207,7 +207,7 @@ Asena.addCommand({pattern: 'freefire ?(.*)', fromMe: false, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/epep?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -217,7 +217,7 @@ Asena.addCommand({pattern: 'gplay ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gplaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/gplaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -227,7 +227,7 @@ Asena.addCommand({pattern: 'splay ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/splaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/splaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -237,7 +237,7 @@ Asena.addCommand({pattern: 'box3d ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/text3dbox?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -247,7 +247,7 @@ Asena.addCommand({pattern: '3d ?(.*)', fromMe: false, dontAddCommandList: true},
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/text3d?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/text3d?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -257,7 +257,7 @@ Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: false, dontAddCommandList:
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/logobp?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -267,7 +267,7 @@ Asena.addCommand({pattern: 'thunder ?(.*)', fromMe: false, dontAddCommandList: t
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/thundertext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/thundertext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -277,7 +277,7 @@ Asena.addCommand({pattern: 'leave ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/leavest?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/leavest?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -287,7 +287,7 @@ Asena.addCommand({pattern: 'tlight ?(.*)', fromMe: false, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/tlight?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/tlight?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -297,7 +297,7 @@ Asena.addCommand({pattern: 'book ?(.*)', fromMe: false, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/nulis?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/nulis?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -420,7 +420,7 @@ Asena.addCommand({pattern: 'wolf ?(.*)', fromMe: false, dontAddCommandList: true
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/wolflogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/wolflogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -437,7 +437,7 @@ Asena.addCommand({pattern: 'pubg ?(.*)', fromMe: false, dontAddCommandList: true
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/pubglogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/pubglogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -454,7 +454,7 @@ Asena.addCommand({pattern: 'snowwrite ?(.*)', fromMe: false, dontAddCommandList:
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/snowwrite?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/snowwrite?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -471,7 +471,7 @@ Asena.addCommand({pattern: 'watercolour ?(.*)', fromMe: false, dontAddCommandLis
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/watercolour?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/watercolour?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -488,7 +488,7 @@ Asena.addCommand({pattern: 'avengers ?(.*)', fromMe: false, dontAddCommandList: 
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/logoaveng?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/logoaveng?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -505,7 +505,7 @@ Asena.addCommand({pattern: 'ph ?(.*)', fromMe: false, dontAddCommandList: true},
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/phlogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -522,7 +522,7 @@ Asena.addCommand({pattern: 'marvel ?(.*)', fromMe: false, dontAddCommandList: tr
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/marvellogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/marvellogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -539,7 +539,7 @@ Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: false, dontAddCommandList: tr
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gtext?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/gtext?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -559,7 +559,7 @@ Asena.addCommand({pattern: 'qr ?(.*)', fromMe: true, dontAddCommandList: true}, 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/qrencode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/qrencode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -569,7 +569,7 @@ Asena.addCommand({pattern: 'barcode ?(.*)', fromMe: true, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/barcode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/barcode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -581,7 +581,7 @@ Asena.addCommand({pattern: 'naruto ?(.*)', fromMe: true, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/naruto?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/naruto?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -591,7 +591,7 @@ Asena.addCommand({pattern: 'bneon ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/bneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/bneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -601,7 +601,7 @@ Asena.addCommand({pattern: 'matrix ?(.*)', fromMe: true, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/matrix?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/matrix?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -611,7 +611,7 @@ Asena.addCommand({pattern: 'breakwall ?(.*)', fromMe: true, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/breakwall?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/breakwall?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -621,7 +621,7 @@ Asena.addCommand({pattern: 'gneon ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/gneon?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -631,7 +631,7 @@ Asena.addCommand({pattern: 'dropwater ?(.*)', fromMe: true, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/dropwater?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/dropwater?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -641,7 +641,7 @@ Asena.addCommand({pattern: 'crossfire ?(.*)', fromMe: true, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/crosslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/crosslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -651,7 +651,7 @@ Asena.addCommand({pattern: 'silk ?(.*)', fromMe: true, dontAddCommandList: true}
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/silktext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/silktext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -661,7 +661,7 @@ Asena.addCommand({pattern: 'flame ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/flametext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/flametext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -671,7 +671,7 @@ Asena.addCommand({pattern: 'glow ?(.*)', fromMe: true, dontAddCommandList: true}
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/glowtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/glowtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -681,7 +681,7 @@ Asena.addCommand({pattern: 'smoke ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/smoketext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/smoketext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -691,7 +691,7 @@ Asena.addCommand({pattern: 'sky ?(.*)', fromMe: true, dontAddCommandList: true},
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/skytext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/skytext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -701,7 +701,7 @@ Asena.addCommand({pattern: 'cs ?(.*)', fromMe: true, dontAddCommandList: true}, 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/cslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/cslogo?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -711,7 +711,7 @@ Asena.addCommand({pattern: 'lightwriting ?(.*)', fromMe: true, dontAddCommandLis
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/lithgtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/lithgtext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -721,7 +721,7 @@ Asena.addCommand({pattern: 'crismes ?(.*)', fromMe: true, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/crismes?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/crismes?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -731,7 +731,7 @@ Asena.addCommand({pattern: 'firework ?(.*)', fromMe: true, dontAddCommandList: t
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/tfire?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -741,7 +741,7 @@ Asena.addCommand({pattern: 'sandw ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/sandw?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/sandw?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -751,7 +751,7 @@ Asena.addCommand({pattern: 'freefire ?(.*)', fromMe: true, dontAddCommandList: t
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/epep?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -761,7 +761,7 @@ Asena.addCommand({pattern: 'gplay ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gplaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/gplaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -771,7 +771,7 @@ Asena.addCommand({pattern: 'splay ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/splaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/splaybutton?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -781,7 +781,7 @@ Asena.addCommand({pattern: 'box3d ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/text3dbox?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -791,7 +791,7 @@ Asena.addCommand({pattern: '3d ?(.*)', fromMe: true, dontAddCommandList: true}, 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/text3d?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/text3d?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -801,7 +801,7 @@ Asena.addCommand({pattern: 'blackpink ?(.*)', fromMe: true, dontAddCommandList: 
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/logobp?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -811,7 +811,7 @@ Asena.addCommand({pattern: 'thunder ?(.*)', fromMe: true, dontAddCommandList: tr
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/thundertext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/thundertext?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -821,7 +821,7 @@ Asena.addCommand({pattern: 'leave ?(.*)', fromMe: true, dontAddCommandList: true
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/leavest?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/leavest?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -831,7 +831,7 @@ Asena.addCommand({pattern: 'tlight ?(.*)', fromMe: true, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/tlight?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/tlight?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -841,7 +841,7 @@ Asena.addCommand({pattern: 'book ?(.*)', fromMe: true, dontAddCommandList: true}
 
     if (match[1] === '') return await message.sendMessage(need);
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/nulis?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/nulis?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -964,7 +964,7 @@ Asena.addCommand({pattern: 'wolf ?(.*)', fromMe: true, dontAddCommandList: true}
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/wolflogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/wolflogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -981,7 +981,7 @@ Asena.addCommand({pattern: 'pubg ?(.*)', fromMe: true, dontAddCommandList: true}
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/pubglogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/pubglogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -998,7 +998,7 @@ Asena.addCommand({pattern: 'snowwrite ?(.*)', fromMe: true, dontAddCommandList: 
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/snowwrite?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/snowwrite?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -1015,7 +1015,7 @@ Asena.addCommand({pattern: 'watercolour ?(.*)', fromMe: true, dontAddCommandList
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/watercolour?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/watercolour?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -1032,7 +1032,7 @@ Asena.addCommand({pattern: 'avengers ?(.*)', fromMe: true, dontAddCommandList: t
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/logoaveng?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/logoaveng?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -1049,7 +1049,7 @@ Asena.addCommand({pattern: 'ph ?(.*)', fromMe: true, dontAddCommandList: true}, 
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/phlogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -1066,7 +1066,7 @@ Asena.addCommand({pattern: 'marvel ?(.*)', fromMe: true, dontAddCommandList: tru
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/marvellogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/marvellogo?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
@@ -1083,7 +1083,7 @@ Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: true, dontAddCommandList: tru
         topText = split[0];
 }
 
-    var ttinullimage = await axios.get(`https://api.zeks.xyz/api/gtext?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/gtext?apikey=${Config.TH}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.CAPTION_KEY})
 
