@@ -16,7 +16,13 @@ if (Config.WORKTYPE == 'private') {
     
     }));
 
+    Asena.addCommand({ pattern: 'toon ?(.*)', fromMe: true,dontaddCommandList: true }, (async (message, match) => {
+      
+        var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/anime/webtoon?url=https%3A%2F%2Fwww.webtoons.com%2Fid%2Faction%2Fweak-hero%2Fep-135-last-one8%2Fviewer%3Ftitle_no%3D1585%26episode_no%3D136&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
 
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+    
+    }));
 
     Asena.addCommand({ pattern: 'wifu ?(.*)', fromMe: true,dontaddCommandList: true }, (async (message, match) => {
 
@@ -78,7 +84,13 @@ else if (Config.WORKTYPE == 'public') {
     
     }));
 
+    Asena.addCommand({ pattern: 'toon ?(.*)', fromMe: true,dontaddCommandList: true }, (async (message, match) => {
+      
+        var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/anime/webtoon?url=https%3A%2F%2Fwww.webtoons.com%2Fid%2Faction%2Fweak-hero%2Fep-135-last-one8%2Fviewer%3Ftitle_no%3D1585%26episode_no%3D136&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
 
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+    
+    }));
 
     Asena.addCommand({ pattern: 'wifu ?(.*)', fromMe: false,dontaddCommandList: true }, (async (message, match) => {
         
