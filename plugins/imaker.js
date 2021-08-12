@@ -2,7 +2,7 @@ const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
-const IMAKER = "\n*~* ```IMAGE 🌈 MAKER``` *~*\n\n\n┎🍇 ```.barcode```\n┃\n┝🍇 ```.qr```\n┃\n┝🍇 ```.naruto```\n┃\n┝🍇 ```.bneon```\n┃\n┝🍇 ```.matrix```\n┃\n┝🍇 ```.breakwall```\n┃\n┝🍇 ```.gneon```\n┃\n┝🍇 ```.dropwater```\n┃\n┝🍇 ```.crossfire```\n┃\n┝🍇 ```.silk```\n┃\n┝🍇 ```.flame```\n┃\n┝🍇 ```.glow```\n┃\n┝🍇 ```.smoke```\n┃\n┝🍇 ```.sky```\n┃\n┝🍇 ```.cs```\n┃\n┝🍇 ```.lightwriting```\n┃\n┝🍇 ```.crismes```\n┃\n┝🍇 ```.firework```\n┃\n┝🍇 ```.sandw```\n┃\n┝🍇 ```.freefire```\n┃\n┝🍇 ```.gplay```\n┃\n┝🍇 ```.splay```\n┃\n┝🍇 ```.box3d```\n┃\n┝🍇 ```.3d```\n┃\n┝🍇 ```.blackpink```\n┃\n┝🍇 ```.thunder```\n┃\n┝🍇 ```.leave```\n┃\n┝🍇 ```.tlight```\n┃\n┝🍇 ```.book```\n┃\n┝🍇 ```.gaming```\n┃\n┝🍇 ```.wetglass```\n┃\n┝🍇 ```.multicolour```\n┃\n┝🍇 ```.luxurygold```\n┃\n┝🍇 ```.bflower```\n┃\n┝🍇 ```.metal```\n┃\n┝🍇 ```.royal```\n┃\n┝🍇 ```.anony```\n┃\n┝🍇 ```.avatarlol```\n┃\n┝🍇 ```.fps```\n┃\n┝🍇 ```.wolf```\n┃\n┝🍇 ```.pubg```\n┃\n┝🍇 ```.snowwrite```\n┃\n┝🍇 ```.watercolour```\n┃\n┝🍇 ```.avengers```\n┃\n┝🍇 ```.ph```\n┃\n┝🍇 ```.marvel```\n┃\n┗🍇 ```.glitch```\n\n"
+const IMAKER = "\n*~* ```IMAGE 🌈 MAKER``` *~*\n\n\n┎🍇 ```.barcode```\n┃\n┝🍇 ```.qr```\n┃\n┝🍇 ```.naruto```\n┃\n┝🍇 ```.bneon```\n┃\n┝🍇 ```.matrix```\n┃\n┝🍇 ```.breakwall```\n┃\n┝🍇 ```.gneon```\n┃\n┝🍇 ```.dropwater```\n┃\n┝🍇 ```.crossfire```\n┃\n┝🍇 ```.silk```\n┃\n┝🍇 ```.flame```\n┃\n┝🍇 ```.glow```\n┃\n┝🍇 ```.smoke```\n┃\n┝🍇 ```.sky```\n┃\n┝🍇 ```.cs```\n┃\n┝🍇 ```.lightwriting```\n┃\n┝🍇 ```.crismes```\n┃\n┝🍇 ```.firework```\n┃\n┝🍇 ```.sandw```\n┃\n┝🍇 ```.freefire```\n┃\n┝🍇 ```.gplay```\n┃\n┝🍇 ```.splay```\n┃\n┝🍇 ```.box3d```\n┃\n┝🍇 ```.3d```\n┃\n┝🍇 ```.blackpink```\n┃\n┝🍇 ```.thunder```\n┃\n┝🍇 ```.leave```\n┃\n┝🍇 ```.tlight```\n┃\n┝🍇 ```.book```\n┃\n┝🍇 ```.gaming```\n┃\n┝🍇 ```.wolf```\n┃\n┝🍇 ```.pubg```\n┃\n┝🍇 ```.snowwrite```\n┃\n┝🍇 ```.watercolour```\n┃\n┝🍇 ```.avengers```\n┃\n┝🍇 ```.ph```\n┃\n┝🍇 ```.marvel```\n┃\n┗🍇 ```.glitch```\n\n"
 const Config = require('../config');
 const Ln = "Image Maker"
 const need = "```YOU MUST ENTER WORDS!```"
@@ -312,100 +312,6 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: false, dontAddCommandList: tr
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
     }));
-
-//QA
-
-Asena.addCommand({pattern: 'wetglass ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/wetglass?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'multicolour3d ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/multicolor3d?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'luxurygold ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/luxurygold?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'bflower ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/beautifulflower?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'metal ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/metallogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'royal ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/royaltext?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/anonymhacker?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'avatarlol ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/avatarlolnew?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'fps ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/fpslogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-
 
 //Two Text Logos By Thevindu Hansara (TEXTPRO)
 
@@ -856,100 +762,6 @@ Asena.addCommand({pattern: 'gaming ?(.*)', fromMe: true, dontAddCommandList: tru
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
     }));
-
-//QA
-
-Asena.addCommand({pattern: 'wetglass ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/wetglass?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'multicolour3d ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/multicolor3d?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'luxurygold ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/luxurygold?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'bflower ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/beautifulflower?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'metal ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/metallogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'royal ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/royaltext?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'anony ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/anonymhacker?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'avatarlol ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/avatarlolnew?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-Asena.addCommand({pattern: 'fps ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
-
-    if (match[1] === '') return await message.sendMessage(need);
-
-    var ttinullimage = await axios.get(`https://api.${Config.LCRUN}.xyz/api/ephoto1/fpslogo?apikey=${Config.QA}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
-
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-
-    }));
-
-
 
 //Two Text Logos By Thevindu Hansara (TEXTPRO)
 
