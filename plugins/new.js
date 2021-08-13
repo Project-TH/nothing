@@ -16,8 +16,8 @@ Asena.addCommand({pattern: 'new', fromMe: false, desc: Lang.UP}, (async (message
 *2021/08/13*
 
 - *UPDATED IMAGE MAKER ( .imaker )*
-- *UPDATED ANIME LIST``` ( .animelist )*
-- *ADDED NEW COMMAND ESTHETIC``` ( .esthetic )*
+- *UPDATED ANIME LIST ( .animelist )*
+- *ADDED NEW COMMAND ESTHETIC ( .esthetic )*
 
 *GOT A SUGGESTION FOR THE BOT ? ( wa.me/+94703228470 )*
 
