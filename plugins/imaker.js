@@ -905,4 +905,118 @@ Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: true, dontAddCommandList: tru
 
     }));
 
+//XT
+
+Asena.addCommand({pattern: 'blood ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'metal ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/wolfmetal?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'uwo ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/underwaterocean?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'nlight ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/neonlight?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'rainbow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/rainbowshine?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'camo ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/camuflage?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'vintage ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/vintage?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'candy ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/candy?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'gradient ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/gradientavatar?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+    Asena.addCommand({pattern: 'stars ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/stars?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+    
+       Asena.addCommand({pattern: 'fur ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.${Config.XRUN}.xyz/photooxy/fur?text=${match[1]}&APIKEY=${Config.XT}`, { responseType: 'arraybuffer' })
+
+   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CONFIG_KEY})
+
+    }));
+
 }
+
+
