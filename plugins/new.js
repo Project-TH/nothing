@@ -1,4 +1,4 @@
-const XTroid = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const NEW = `
 *WHAT'S NEW ?*
