@@ -12,7 +12,7 @@ if (Config.WORKTYPE == 'public') {
 //QR & BARCODE
 
 Asena.addCommand({pattern: 'qr ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-J
+
     if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://api.${Config.CCRUN}.xyz/api/qrencode?apikey=${Config.TH}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
