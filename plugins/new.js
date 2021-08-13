@@ -6,18 +6,18 @@ const NEW = `
  *⚜️ VERSION 3.0.0*
 *2021/08/13*
 
-- *UPDATED IMAGE MAKER ( .imaker )*
-- *UPDATED ANIME LIST ( .animelist )*
-- *ADDED NEW COMMAND ESTHETIC ( .esthetic )*
+- Updated Image Maker  \\ *.imaker* \\
+- Updated Anime List  \\ *.animelist* \\
+- Added New Command  \\ *.esthetic* \\
 
-*GOT A SUGGESTION FOR THE BOT ? ( wa.me/+94703228470 )*
+<Thevindu Hansara>
 `
 const Config = require('../config')
 const Ln = "Latest Update"
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'new ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,NEW, MessageType.text);
+    Asena.addCommand({ pattern: 'new ?(.*)', fromMe: true, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,NEW, MessageType.text);
 
     }));
 
