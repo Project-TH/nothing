@@ -51,6 +51,7 @@ module.exports = {
     CCN: "Ikyy69",
     ON: "hunter",
     TH: "THEVINDUapi",
+    ZTH: "d537895142",
     XT: "62203531b66c44b4",
     DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
