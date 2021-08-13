@@ -9,6 +9,7 @@ const NEW = `
 - Updated Image Maker
 - Updated Anime List
 ° *.ava*
+° *.kemo*
 ° *.neko*
 - Added New Command
 ° *.esthetic*
