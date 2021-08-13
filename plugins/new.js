@@ -6,9 +6,12 @@ const NEW = `
  *⚜️ VERSION 3.0.0*
 *2021/08/13*
 
-- Updated Image Maker  \\ *.imaker* \\
-- Updated Anime List  \\ *.animelist* \\
-- Added New Command  \\ *.esthetic* \\
+- Updated Image Maker
+- Updated Anime List
+° *.ava*
+° *.neko*
+- Added New Command
+° *.esthetic*
 
 <Thevindu Hansara>
 `
