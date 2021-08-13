@@ -12,7 +12,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'harrypotter ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(message.jid,need);
+    if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/harrypotter?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -22,7 +22,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'retrolol ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(message.jid,need);
+    if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/retrolol?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -32,7 +32,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'shadow ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(message.jid,need);
+    if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/shadow?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -42,7 +42,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'romantic ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(message.jid,need);
+    if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/romantic?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -52,7 +52,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'butterfly ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(message.jid,need);
+    if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/butterfly?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -62,7 +62,7 @@ if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'coffecup ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(message.jid,need);
+    if (match[1] === '') return await message.sendMessage(need);
 
     var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/coffecup?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -78,7 +78,7 @@ else if (Config.WORKTYPE == 'private') {
 
 Asena.addCommand({ pattern: 'harrypotter ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-  if (match[1] === '') return await message.sendMessage(message.jid, need);
+  if (match[1] === '') return await message.sendMessage(need);
 
   var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/harrypotter?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -88,7 +88,7 @@ Asena.addCommand({ pattern: 'harrypotter ?(.*)', fromMe: true, dontAddCommandLis
 
 Asena.addCommand({ pattern: 'retrolol ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-  if (match[1] === '') return await message.sendMessage(message.jid, need);
+  if (match[1] === '') return await message.sendMessage(need);
 
   var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/retrolol?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -98,7 +98,7 @@ Asena.addCommand({ pattern: 'retrolol ?(.*)', fromMe: true, dontAddCommandList: 
 
 Asena.addCommand({ pattern: 'shadow ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-  if (match[1] === '') return await message.sendMessage(message.jid, need);
+  if (match[1] === '') return await message.sendMessage(need);
 
   var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/shadow?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -108,7 +108,7 @@ Asena.addCommand({ pattern: 'shadow ?(.*)', fromMe: true, dontAddCommandList: tr
 
 Asena.addCommand({ pattern: 'romantic ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-  if (match[1] === '') return await message.sendMessage(message.jid, need);
+  if (match[1] === '') return await message.sendMessage(need);
 
   var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/romantic?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -118,7 +118,7 @@ Asena.addCommand({ pattern: 'romantic ?(.*)', fromMe: true, dontAddCommandList: 
 
 Asena.addCommand({ pattern: 'butterfly ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-  if (match[1] === '') return await message.sendMessage(message.jid, need);
+  if (match[1] === '') return await message.sendMessage(need);
 
   var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/butterfly?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
@@ -128,7 +128,7 @@ Asena.addCommand({ pattern: 'butterfly ?(.*)', fromMe: true, dontAddCommandList:
 
 Asena.addCommand({ pattern: 'coffecup ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-  if (match[1] === '') return await message.sendMessage(message.jid, need);
+  if (match[1] === '') return await message.sendMessage(need);
 
   var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/coffecup?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
