@@ -15,7 +15,7 @@ if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.sendMessage(message.jid,need);
 
-    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/harrypotter?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/harrypotter?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.sendMessage(message.jid,need);
 
-    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/retrolol?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/retrolol?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.sendMessage(message.jid,need);
 
-    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/shadow?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/shadow?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.sendMessage(message.jid,need);
 
-    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/romantic?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/romantic?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -55,7 +55,7 @@ if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.sendMessage(message.jid,need);
 
-    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/butterfly?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/butterfly?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -65,7 +65,7 @@ if (Config.WORKTYPE == 'public') {
 
     if (match[1] === '') return await message.sendMessage(message.jid,need);
 
-    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/coffecup?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/coffecup?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
 
@@ -81,7 +81,7 @@ Asena.addCommand({ pattern: 'harrypotter ?(.*)', fromMe: true, dontAddCommandLis
 
   if (match[1] === '') return await message.sendMessage(message.jid, need);
 
-  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/harrypotter?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/harrypotter?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY })
 
@@ -91,7 +91,7 @@ Asena.addCommand({ pattern: 'retrolol ?(.*)', fromMe: true, dontAddCommandList: 
 
   if (match[1] === '') return await message.sendMessage(message.jid, need);
 
-  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/retrolol?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/retrolol?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY })
 
@@ -101,7 +101,7 @@ Asena.addCommand({ pattern: 'shadow ?(.*)', fromMe: true, dontAddCommandList: tr
 
   if (match[1] === '') return await message.sendMessage(message.jid, need);
 
-  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/shadow?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/shadow?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY })
 
@@ -111,7 +111,7 @@ Asena.addCommand({ pattern: 'romantic ?(.*)', fromMe: true, dontAddCommandList: 
 
   if (match[1] === '') return await message.sendMessage(message.jid, need);
 
-  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/romantic?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/romantic?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY })
 
@@ -121,7 +121,7 @@ Asena.addCommand({ pattern: 'butterfly ?(.*)', fromMe: true, dontAddCommandList:
 
   if (match[1] === '') return await message.sendMessage(message.jid, need);
 
-  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/butterfly?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/butterfly?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY })
 
@@ -131,7 +131,7 @@ Asena.addCommand({ pattern: 'coffecup ?(.*)', fromMe: true, dontAddCommandList: 
 
   if (match[1] === '') return await message.sendMessage(message.jid, need);
 
-  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/coffecup?text=${match[1]}&APIKEY=${Config.ZTH}`, { responseType: 'arraybuffer' })
+  var ttinullimage = await axios.get(`https://${Config.ZRUN}.xyz/api/photooxy/coffecup?text=${match[1]}&apikey=${Config.ZTH}`, { responseType: 'arraybuffer' })
 
   await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY })
 
