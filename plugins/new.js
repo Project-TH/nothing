@@ -1,16 +1,7 @@
-const Asena = require('../events');
-const Config = require('../config');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const axios = require('axios');
-//language
-const Language = require('../language');
-const Lang = Language.getString('scrapers');
-
-if (Config.WORKTYPE == 'public') {
-
-Asena.addCommand({pattern: 'new', fromMe: false, desc: Lang.UP}, (async (message, match) => {
-
-    await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ` *WHAT'S NEW ?*
+const XTroid = require('../events');
+const {MessageType} = require('@adiwajshing/baileys');
+const NEW = `
+*WHAT'S NEW ?*
 
  *⚜️ VERSION 3.0.0*
 *2021/08/13*
@@ -20,8 +11,22 @@ Asena.addCommand({pattern: 'new', fromMe: false, desc: Lang.UP}, (async (message
 - *ADDED NEW COMMAND ESTHETIC ( .esthetic )*
 
 *GOT A SUGGESTION FOR THE BOT ? ( wa.me/+94703228470 )*
+`
+const Config = require('../config')
+const Ln = "Latest Update"
 
-`}) 
+if (Config.WORKTYPE == 'public') {
 
- }));
+    Asena.addCommand({ pattern: 'new ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,NEW, MessageType.text);
+
+    }));
+
+}
+
+else if (Config.WORKTYPE == 'private') {
+
+    Asena.addCommand({ pattern: 'new ?(.*)', fromMe: true, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,NEW, MessageType.text);
+
+    }));
+
 }
