@@ -24,11 +24,6 @@ if (Config.WORKTYPE == 'private') {
 
             const json = JSON.parse(response.body);
             const json1 = JSON.parse(response1.body);
-
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, json.result + '\n\n' + json1.result , MessageType.text);
-        } catch {
-            return await message.client.sendMessage(message.jid, UP, MessageType.text);
-        }
     });
 }
 
@@ -43,10 +38,5 @@ else if (Config.WORKTYPE == 'public') {
 
             const json = JSON.parse(response.body);
             const json1 = JSON.parse(response1.body);
-
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, json.result + '\n\n' + json1.result , MessageType.text);
-        } catch {
-            return await message.client.sendMessage(message.jid, UP, MessageType.text);
-        }
     });
 }
