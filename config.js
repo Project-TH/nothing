@@ -50,6 +50,7 @@ module.exports = {
     DATABASE_URL: DATABASE_URL,
     CCN: "Ikyy69",
     ON: "hunter",
+    HLOCK: "hadi-api",
     TH: "THEVINDUapi",
     ZTH: "d537895142",
     XT: "62203531b66c44b4",
