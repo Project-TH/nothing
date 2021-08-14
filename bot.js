@@ -788,8 +788,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                                 await conn.sendMessage(conn.user.jid, '```-- ERROR REPORT --```' + 
                                     '\n```AN ERROR HAS OCCURRED!```'+
                                     '\n```THIS ERROR LOG MAY INCLUDE YOUR NUMBER OR THE NUMBER OF AN OPPONENT. PLEASE BE CAREFUL WITH IT!```' +
-                                    '\n_ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහයට සම්බන්ධ වන්න.._' +
-                                    '\n```SUPPORT GROUP : ```https://chat.whatsapp.com/D8Sk3nYS6Mp74aJ9fQtoil' +
+                                    '\n```IF YOU HAVE ANY QUESTIONS OR PROBLEMS JOIN OUR GROUP```' +
+                                    '\n```SUPPORT : ```https://chat.whatsapp.com/D8Sk3nYS6Mp74aJ9fQtoil' +
                                     '\n```THIS MESSAGE SHOULD HAVE GONE TO YOUR NUMBER (SAVED MESSAGES)```\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
@@ -912,8 +912,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි..! Auto error පද්ධතියට හදුනාගත නොහැකියි..🙇🏻*' +
-                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයන්ට ලියන්න..._'
+                                    return await conn.sendMessage(conn.user.jid, '```🙇🏻 SORRY, I COULD NOT READ THIS ERROR! 🙇🏻```' +
+                                        '\n'
                                         , MessageType.text
                                     );
                                 }    
