@@ -18,6 +18,119 @@ const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
 const got = require('got');
 
+//UPDATE
+
+        if (config.WORKTYPE == 'public') {
+      
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '*🎭Neotro-X Public Olarak Çalışıyor! 🙇*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*🎭Neotro-X Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                }
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                        }
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+            else { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '```BOT WORKING AS PUBLIC!```\n```TO CHANGE PRIVATE``` *< .setvar WORK_TYPE:private >*\n\n', MessageType.text);
+                }               
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                        }
+                    );
+        
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```NEW UPDATE AVAILABLE FOR YOUR BOT!```\n```TO UPDATE``` *< .update now >*\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+        }
+        else if (config.WORKTYPE == 'private') { 
+            if (config.LANG == 'TR' || config.LANG == 'AZ') { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, ' Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*🎭Neotro-X Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                }
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                        }
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+            else { 
+                if (config.FULLEVA == 'true') {
+                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
+                } else {
+                    await conn.sendMessage(conn.user.jid, '```BOT WORKING AS PRIVATE!```\n```TO CHANGE PUBLIC``` *< .setvar WORK_TYPE:public >*\n\n', MessageType.text);
+                }
+                await git.fetch();
+                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                if (commits.total === 0) {
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        Lang.UPDATE, MessageType.text
+                    );    
+                } else {
+                    var degisiklikler = Lang.NEW_UPDATE;
+                    commits['all'].map(
+                        (commit) => {
+                            degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
+                        }
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '```TYPE``` *.update now* ````TO UPDATE YOUR BOT!```\n\n' + degisiklikler + '```', MessageType.text
+                    ); 
+                }
+            }
+        }
+
 // Sql
 const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
     info: {
