@@ -1,4 +1,4 @@
-const Asena = require('../events');
+/*const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const got = require("got");
@@ -40,3 +40,4 @@ else if (Config.WORKTYPE == 'public') {
             const json1 = JSON.parse(response1.body);
     });
 }
+*/
