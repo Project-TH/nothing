@@ -14,7 +14,7 @@ const got = require('got');
 const simpleGit = require('simple-git');
 const git = simpleGit();
 const crypto = require('crypto');
-const nw = '```Blacklist Defected!```'
+const nw = '```BLACKLIST DEFECTED!```'
 const heroku = new Heroku({
     token: config.HEROKU.API_KEY
 });
