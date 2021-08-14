@@ -15,7 +15,7 @@ const Lang = Language.getString('AsenaPlug');
 if (Config.WORKTYPE == 'private') {
     
 	Asena.addCommand({pattern: 'francy ?(.*)', fromMe: true, desc: DC,  deleteCommand: false}, async (message, match) => {
-	if (match[1] === 'xx') return await message.sendMessage(need);
+	if (match[1] === '') return await message.sendMessage(need);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
         try {
@@ -27,14 +27,14 @@ if (Config.WORKTYPE == 'private') {
 
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, json.result + '\n\n' + json1.result , MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, DC, MessageType.text);
+            return await message.sendMessage(need);
         }
     });
 }
 
 else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'francy ?(.*)', fromMe: false, desc: DC}, async (message, match) => {
-        if (match[1] === 'xx') return await message.sendMessage(need);
+        if (match[1] === '') return await message.sendMessage(need);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
         try {
@@ -46,7 +46,7 @@ else if (Config.WORKTYPE == 'public') {
 
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, json.result + '\n\n' + json1.result , MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, DC, MessageType.text);
+            return await message.sendMessage(need);
         }
     });
 }
