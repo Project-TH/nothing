@@ -10,7 +10,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v1.3.2 Global Stable',
+    VERSION: 'v3.0.0 PRO',
     CCRUN: "zeks",
     XRUN: "xteam",
     ZRUN: "zenzapi",
@@ -38,8 +38,8 @@ module.exports = {
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    CAPTION_KEY: process.env.CP === undefined ?'🎭 *Project-69* 🎭' : process.env.CP,
-    MENUTEXT: process.env.MENU === undefined ?'🎭 *Project-69* 🎭' : process.env.MENU,
+    CAPTION_KEY: process.env.CP === undefined ?'〜(꒪꒳꒪)〜' : process.env.CP,
+    MENUTEXT: process.env.MENU === undefined ?'❇️ ```MENU``` ❇️' : process.env.MENU,
     COMMAND: process.env.COMMAND === undefined ?'help' : process.env.COMMAND,    
     BRANCH: 'master',
     HEROKU: {
