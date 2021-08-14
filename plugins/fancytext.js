@@ -2,7 +2,8 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const got = require("got");
-const UP = "```YOU MUST ENTER WORDS!```"
+const need = "```YOU MUST ENTER WORDS!```"
+const DC = "```FANCY TEXT MAKER.```"
 
 // Config
 const Config = require('../config');
@@ -13,8 +14,8 @@ const Lang = Language.getString('AsenaPlug');
 
 if (Config.WORKTYPE == 'private') {
     
-	Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: true, desc: UP,  deleteCommand: false}, async (message, match) => {
-        if (match[1] === 'xx') return await message.reply(Lang.UP);
+	Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: true, desc: DC,  deleteCommand: false}, async (message, match) => {
+    if (match[1] === '') return await message.sendMessage(need);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
         try {
@@ -32,8 +33,8 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: false, desc: UP}, async (message, match) => {
-        if (match[1] === 'xx') return await message.reply(Lang.UP);
+    Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: false, desc: DC}, async (message, match) => {
+    if (match[1] === '') return await message.sendMessage(need);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
         try {
