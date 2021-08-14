@@ -3,7 +3,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const got = require("got");
 const need = "```YOU MUST ENTER WORDS!```"
-const DC = "🌹"
+const DC = "It generates fancy texts."
 
 // Config
 const Config = require('../config');
