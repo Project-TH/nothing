@@ -2,6 +2,7 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const got = require("got");
+const UP = "```YOU MUST ENTER WORDS!```"
 
 // Config
 const Config = require('../config');
@@ -12,7 +13,7 @@ const Lang = Language.getString('AsenaPlug');
 
 if (Config.WORKTYPE == 'private') {
     
-	Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: true, desc: Lang.UP,  deleteCommand: false}, async (message, match) => {
+	Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: true, desc: UP,  deleteCommand: false}, async (message, match) => {
         if (match[1] === 'xx') return await message.reply(Lang.UP);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
@@ -25,13 +26,13 @@ if (Config.WORKTYPE == 'private') {
 
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, json.result + '\n\n' + json1.result , MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.UP, MessageType.text);
+            return await message.client.sendMessage(message.jid, UP, MessageType.text);
         }
     });
 }
 
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: false, desc: Lang.UP}, async (message, match) => {
+    Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: false, desc: UP}, async (message, match) => {
         if (match[1] === 'xx') return await message.reply(Lang.UP);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
@@ -44,7 +45,7 @@ else if (Config.WORKTYPE == 'public') {
 
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, json.result + '\n\n' + json1.result , MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.UP, MessageType.text);
+            return await message.client.sendMessage(message.jid, UP, MessageType.text);
         }
     });
 }
