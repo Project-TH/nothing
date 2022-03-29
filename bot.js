@@ -77,7 +77,7 @@ async function whatsAsena () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('✅ Login information updated!')
+            chalk.blueBright.italic('✅ 𝙻𝙾𝙶𝙸𝙽 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝙳!')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -92,17 +92,17 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait!')}`);
+${chalk.blue.italic('ℹ️ 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿... 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃!')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('✅ Login successful!')
+            chalk.green.bold('✅ 𝙻𝙾𝙶𝙸𝙽 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻!')
         );
 
         console.log(
-            chalk.blueBright.italic('⬇️ Installing external plugins...')
+            chalk.blueBright.italic('⬇️ 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙸𝙽𝙶 𝙴𝚇𝚃𝙴𝚁𝙽𝙰𝙻 𝙿𝙻𝚄𝙶𝙸𝙽𝚂...')
         );
 
         var plugins = await plugindb.PluginDB.findAll();
@@ -118,7 +118,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait!')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('🌈  Installing plugins...')
+            chalk.blueBright.italic('🌈 𝙸𝙽𝚂𝚃𝙰𝙻𝙻𝙸𝙽𝙶 𝙿𝙻𝚄𝙶𝙸𝙽𝚂...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -128,7 +128,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait!')}`);
         });
 
         console.log(
-            chalk.green.bold('Your Bot is Working! 😇')
+            chalk.green.bold('𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝙸𝚂 𝚆𝙾𝚁𝙺𝙸𝙽𝙶! 😇')
         );
     });
     
