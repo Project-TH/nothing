@@ -3,7 +3,7 @@
     "description": "",
     "logo": "https://i.postimg.cc/Bv11kvHn/1961540.jpg",
     "keywords": ["whatsapp", "userbot", "69", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/ThevinduHansara/Project-69",
+    "repository": "https://github.com/Project-TH/nothing",
     "website":   "",
     "success_url": "",
     "stack": "container",
@@ -21,30 +21,10 @@
             "required": true,
             "value": "en"
         },
-        "ANTİ_LİNK": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "AUTO_BİO": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
         "HANDLERS": {
             "description": "",
             "required": true,
             "value": "^[.!;]"
-        },
-        "FULL_EVA": {
-            "description": "",
-            "required": true,
-            "value": "false"
-        },
-        "NO_LOG": {
-            "description": "",
-            "required": true,
-            "value": "false"
         },
         "SEND_READ": {
             "description": "",
@@ -60,11 +40,6 @@
             "description": "",
             "required": true
         },
-        "BLOCK_CHAT": {
-            "description": "",
-            "required": false,
-            "value": "false"
-        },
         "WORK_TYPE": {
             "description": "",
             "required": true,
@@ -73,11 +48,6 @@
         "HEROKU_APP_NAME": {
             "description": "",
             "required": true
-        },
-        "DEBUG": {
-            "description": "",
-            "required": true,
-            "value": "false"
         },
         "REMOVE_BG_API_KEY": {
             "description": "https://remove.bg",
