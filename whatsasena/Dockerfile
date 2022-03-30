@@ -1,8 +1,8 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/ThevinduHansara/Project-69 /root/Project-69
-WORKDIR /root/Project-69/
-ENV TZ=Europe/Istanbul
+RUN git clone https://github.com/Project-TH/nothing /root/nothing
+WORKDIR /root/nothing/
+ENV TZ=Asia/Colombo
 RUN npm install supervisor -g
 RUN yarn install --no-audit
 
