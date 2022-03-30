@@ -10,7 +10,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v3.0.0 PRO',
+    VERSION: 'v3.0.0 Premium',
     CCRUN: "zeks",
     XRUN: "xteam",
     ZRUN: "zenzapi",
