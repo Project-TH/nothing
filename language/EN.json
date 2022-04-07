@@ -76,7 +76,7 @@
         "nekobin": {
             "NEKO_DESC": "",
             "NEED_REPLY": "```Need Reply!```",
-            "MUST_TEXT": "```Need Reply```"
+            "MUST_TEXT": "```Need Reply!```"
         },
         "heroku": {
             "RESTART_DESC": "",
@@ -138,20 +138,20 @@
 			"SETRULE_DESC": "",
             "NOT_SET_RULE": "🦹🏼‍♀️ *Rules Not-Setted!*\n*Example:* .setrules No Links#No Spamming",
             "NEED_RULE_TEXT": "🦹🏼‍♀️ *Need Text!*\n*Example* _.setrules No Links#No Spamming_",
-            "RULE_DELETED": "*✅ Rule message has been deleted successfully!*",
-            "RULE_SETTED": "*✅ Rule message has been set successfully!*",
-            "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
-            "PLKADMIN": ".report you are not admin \n\n 🇩🇴🇳🇹 🇹🇷🇾 🇦🇬🇦🇮🇳, 🇮🇫 🇾🇴🇺 🇹🇷🇾 🇾🇴🇺 🇼🇮🇱🇱 🇧🇪 🇷🇪🇲🇴🇻🇪🇩 🇧🇾 🇦🇩🇲🇮🇳🇸",
-            "NOT_SET_GOODBYE": "*You didn't set a goodbye message!*\n*To set:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_ALREADY_SETTED": "*✅ Goodbye message has been set!*\n*Message:* ```",
-            "NEED_GOODBYE_TEXT": "*You must write a message to set up the goodbye message.*\n*Example:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_DELETED": "*✅ Goodbye message has been deleted successfully!*",
-            "GOODBYE_SETTED": "*✅ Goodbye message has been setted successfully!*"
+            "RULE_DELETED": "*✅ Rules Deleted!*",
+            "RULE_SETTED": "*✅ Rules Setted!*",
+            "GOODBYE_DESC": "",
+            "PLKADMIN": "^^",
+            "NOT_SET_GOODBYE": "*Good Bye Not-Setted!*\n*To set:* ```.goodbye bye && bye#see ya```",
+            "GOODBYE_ALREADY_SETTED": "*✅ Good Bye Setted!*\n*Message:* ```",
+            "NEED_GOODBYE_TEXT": "*Need Text!*\n*Example:* ```.goodbye bye && bye#see ya```",
+            "GOODBYE_DELETED": "*✅ Good Bye Deleted!*",
+            "GOODBYE_SETTED": "*✅ Good Bye Setted!*"
         },
         "lydia": {
-            "ADDLYDIA_DESC": "Activates Lydia (AI) for the user.",
-            "NEED_REPLY": "```Please respond to a user's message!```",
-            "COFFEEHOUSE": "```You haven't defined the Coffehouse API Key! ```",
+            "ADDLYDIA_DESC": "",
+            "NEED_REPLY": "```Need Reply!```",
+            "COFFEEHOUSE": "```Not-Defined Coffehouse API Key! ```",
             "ENABLED_LYDIA": "```Lydia has been activated for this user!```",
             "RMLYDIA_DESC": "Makes Lydia disabled for the user.",
             "ALREADY_EMPTY": "```Your user list is already empty!```",
